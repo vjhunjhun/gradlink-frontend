@@ -28,7 +28,7 @@ const CreatePost = ({ open, setOpen }) => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:8000/api/v1/post/addpost",
+        `${API_URL}/api/v1/post/addpost`,
         formData,
         {
           headers: {
